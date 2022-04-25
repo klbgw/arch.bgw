@@ -11,3 +11,4 @@ systemctl enable avahi-daemon
 systemctl enable reflector.timer
 systemctl enable fstrim.timer
 systemctl enable firewalld
+systemctl enable libvirtd
