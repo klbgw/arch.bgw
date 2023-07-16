@@ -7,7 +7,7 @@ sed -i '398s/.//' /etc/locale.gen
 locale-gen
 echo "LANG=ru_RU.UTF-8" >> /etc/locale.conf
 echo "LC=COLLATE=C" >> /etc/locale.conf
-echo "KEYMAP=ru >> /etc/vconsole.conf
+echo "KEYMAP=ru" >> /etc/vconsole.conf
 echo "FONT=cyr-sun16" >> /etc/vconsole.conf
 echo "arch" >> /etc/hostname
 echo "127.0.0.1 localhost" >> /etc/hosts
@@ -40,3 +40,4 @@ echo "bgw ALL=(ALL) ALL" >> /etc/sudoers.d/bgw
 
 
 printf "\e[1;32mDone! Type exit, umount -a and reboot.\e[0m"
+
