@@ -2,7 +2,7 @@
 
 ln -sf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
 hwclock --systohc
-sed -i '178s/.//' /etc/locale.gen
+sed -i '171s/.//' /etc/locale.gen
 sed -i '398s/.//' /etc/locale.gen
 locale-gen
 echo "LANG=ru_RU.UTF-8" >> /etc/locale.conf
