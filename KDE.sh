@@ -10,7 +10,7 @@ sudo firewall-cmd --reload
 sudo mv /arch.bgw /home/bgw
 cd /home/bgw/arch.bgw
 
-git clone https://aur.archlinux.org/yay.git
+git clone https://aur.archlinux.org/yay.git /home/bgw
 cd yay
 makepkg -si
 
