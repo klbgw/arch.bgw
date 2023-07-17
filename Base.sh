@@ -31,7 +31,7 @@ sed -i '91s/.//' /etc/pacman.conf
 sed -i '34i ILoveCandy' /etc/pacman.conf
 
 pacman -Sy
-pacman -S reflector
+pacman -S --noconfirm reflector
 
 reflector --country Germany,France,Russia,'United States' --age 12 --latest 20 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 
