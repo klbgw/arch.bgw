@@ -37,11 +37,6 @@ grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 
 grub-mkconfig -o /boot/grub/grub.cfg
 
-sed -i '33s/.//' /etc/pacman.conf
-sed -i '36s/.//' /etc/pacman.conf
-sed -i '37s/.//' /etc/pacman.conf
-sed -i '34i ILoveCandy' /etc/pacman.conf
-
 systemctl enable NetworkManager
 systemctl enable bluetooth
 systemctl enable cups.service
