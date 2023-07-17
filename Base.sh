@@ -28,7 +28,6 @@ sed -i '35s/.//' /etc/pacman.conf
 sed -i '36s/.//' /etc/pacman.conf
 sed -i '90s/.//' /etc/pacman.conf
 sed -i '91s/.//' /etc/pacman.conf
-sed -i '34i ILoveCandy' /etc/pacman.conf
 
 pacman -Sy
 pacman -S reflector
@@ -40,6 +39,8 @@ pacman -S grub efibootmgr efitools networkmanager network-manager-applet network
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 
 grub-mkconfig -o /boot/grub/grub.cfg
+
+sed -i '34i ILoveCandy' /etc/pacman.conf
 
 systemctl enable NetworkManager
 systemctl enable bluetooth
