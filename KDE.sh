@@ -7,6 +7,9 @@ sudo firewall-cmd --add-port=1025-65535/tcp --permanent
 sudo firewall-cmd --add-port=1025-65535/udp --permanent
 sudo firewall-cmd --reload
 
+sudo mv /arch.bgw /home/bgw
+cd /home/bgw/arch.bgw
+
 git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
