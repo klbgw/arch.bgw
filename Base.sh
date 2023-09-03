@@ -7,8 +7,6 @@ sed -i '398s/.//' /etc/locale.gen #for ru_RU.UTF-8
 locale-gen
 echo "LANG=ru_RU.UTF-8" >> /etc/locale.conf
 echo "LC=COLLATE=C" >> /etc/locale.conf
-loadkeys ru
-setfont ter-c32b
 echo "KEYMAP=ru" >> /etc/vconsole.conf
 echo "FONT=ter-c32b" >> /etc/vconsole.conf
 echo "arch" >> /etc/hostname
